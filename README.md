@@ -24,10 +24,11 @@
      ├── PolygonPanel.java  # 繪製圖形模組
      ├── AStar.java  # A＊演算法模組
      ├── CheckCollisions.java  # 檢驗碰撞模組
+     ├── PolygonScaler.java  # 移動物體與障礙物的空間轉換
      └── SmoothPath.java  # 平滑化路徑模組
 ```
 
-**操作方式：** 該程式設計採用Java GUI，除了Form內的障礙物，可以利用滑鼠拖拉方式改變擺放位置外，對於MenuBar的操作將由下列行說明：
+**操作方式：** 請依照以下方式進行該程式的啟動：首先執行MotionPlanningExample.java檔案。此程式採用了Java GUI設計，除了可以在表單(Form)中拖拉調整障礙物(藍色多邊形)的位置外，您亦可以通過操作選單列(MenuBar)，以下將詳細說明各項操作功能：
 1. File -> Initial: 初始化障礙物位置。
 2. File -> Close: 關閉視窗。
 3. Operate -> Run: 執行A*演算法。
