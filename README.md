@@ -18,7 +18,7 @@
 ├── LICENSE
 ├── README.md
 ├── 執行畫面.png  # 軟體執行畫面
-└── app  # 開發程式資料夾
+└── code  # 開發程式資料夾
      ├── MotionPlanningExample.java  # 主程式
      ├── MenuBar.java  # 設置MenuBar模組
      ├── PolygonPanel.java  # 繪製圖形模組
