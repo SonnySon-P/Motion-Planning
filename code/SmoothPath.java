@@ -46,37 +46,5 @@ public class SmoothPath {
         }
 
         return smoothedPath;
-
-        /*
-        if (smoothedPath.size() < 3) {
-            return smoothedPath;
-        } else {        
-            boolean pathChanged;
-            do {
-                pathChanged = false;
-
-                // 遍歷路徑的每一對相鄰點，進行平滑處理
-                for (int k = 1; k < smoothedPath.size(); i++) {
-                    prevPoint = smoothedPath.get(i - 1);
-                    nextPoint = smoothedPath.get(i + 1);
-
-                    // 計算相鄰點的中間點
-                    Point middlePoint = new Point(
-                            (prevPoint.x + nextPoint.x) / 2,
-                            (prevPoint.y + nextPoint.y) / 2
-                    );
-
-                    // 檢查新生成的路徑是否與障礙物發生碰撞
-                    if (!checkCollisions.isLineAndPolygonsCollisions(prevPoint, middlePoint, polygons)) {
-                        // 如果沒有碰撞，將中間點替代當前點
-                        smoothedPath.set(i, middlePoint);
-                        pathChanged = true;  // 只要有修改就設置為true，繼續平滑
-                    }
-                }
-            } while (pathChanged);
-
-            return smoothedPath;
-        }
-        */
     }
 }
